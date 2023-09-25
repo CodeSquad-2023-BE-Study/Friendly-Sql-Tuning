@@ -6,7 +6,7 @@
 <table>
   <tr>
     <td>진행 기간</td>
-    <td>2023년 7월 6일 ~ 2023년  </td>
+    <td>2023년 9월 25일 ~ 2023년  </td>
   </tr>
   <tr>
     <td>시간</td>
@@ -15,7 +15,7 @@
   <tr>
     <td>읽은 책</td>
     <td>
-      <a href="https://www.yes24.com/Product/Goods/19040233">자바 ORM 표준 JPA 프로그래밍 </a>
+      <a href="https://www.yes24.com/Product/Goods/61254539">친절한 SQL 튜닝</a>
     </td>
   </tr>
   <tr>
