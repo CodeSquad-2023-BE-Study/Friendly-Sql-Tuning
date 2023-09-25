@@ -1,6 +1,5 @@
 # Friendly-sql-Tuning
 
-# Jpa-Study
 이감브의  친절한 SQL 튜닝을 학습합니다. 
 
 <table>
