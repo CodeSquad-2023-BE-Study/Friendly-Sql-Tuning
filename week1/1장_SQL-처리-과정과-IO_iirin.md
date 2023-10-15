@@ -61,7 +61,7 @@ DBMS 내부에서 프로시저를 작성하고 컴파일해 실행 가능한 상
 
 SQL 옵티마이저가 생성한 처리결과를 사용자가 확인할 수 있도록 트리구조로 표현한 것이 실행계획 Excution Plan 입니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/6f2bfc2e-ad5d-4b7b-9ab2-8d5c1ac9981e/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2F6f2bfc2e-ad5d-4b7b-9ab2-8d5c1ac9981e%2FUntitled.png?table=block&id=7ef48be1-1391-45c2-97e6-d1dacab57040&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 비용(Cost)는 쿼리를 수행하는 동안 발생할 것으로 예상하는 I/O 횟수 또는 예상 소요시간을 표현한 값입니다.
 
@@ -99,11 +99,11 @@ WHERE 고객ID = '00008'
 
 SGA (System Global Area)는 서버 프로세스와 백그라운 프로세스가 공통으로 액세스하는 데이터, 제어구조를 캐싱하는 메모리 공간입니다.
 
-![친절한 SQL 튜닝 29pg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/bb417e8c-c6d6-436d-b7a2-3be03a341a64/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2Fbb417e8c-c6d6-436d-b7a2-3be03a341a64%2FUntitled.png?table=block&id=10f6ec8d-f61b-44eb-8728-d99a3acd8634&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 친절한 SQL 튜닝 29pg
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/4f3bd4e2-9758-4cd2-9bec-8e73309d4263/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2F4f3bd4e2-9758-4cd2-9bec-8e73309d4263%2FUntitled.png?table=block&id=8cdcfd4c-3267-4076-94ea-62823efd31d1&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 ### SQL 최적화 과정은 왜 하드한가?
 
@@ -167,7 +167,7 @@ ResultSet rs = st.executeQuery();
 
 OS 혹은 I/O 서브 시스템이 I/O를 처리하는 동안 프로세스는 멈춰있습니다. (여기서 I/O는 디스크 I/O)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/ef0942dd-8b34-4d97-aa26-aa94ebdb54a8/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2Fef0942dd-8b34-4d97-aa26-aa94ebdb54a8%2FUntitled.png?table=block&id=2aebc80b-62ec-48b7-85db-c65ba6d3f18d&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 프로세스가 디스크에서 데이터를 읽어야 할 땐 CPU를 OS에 반환하고 잠시 waiting 상태가 되어 I/O가 완료되기를 기다립니다.
 
@@ -175,7 +175,7 @@ OS 혹은 I/O 서브 시스템이 I/O를 처리하는 동안 프로세스는 멈
 
 ## 1.3.2 데이터베이스 저장 구조
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/0f7d1a4f-9876-4571-b2be-14d590d2156f/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2F0f7d1a4f-9876-4571-b2be-14d590d2156f%2FUntitled.png?table=block&id=1ce6683f-beab-4740-8552-914e5a862c30&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 한 블록, 한 익스텐트는 하나의 테이블이 독점합니다.
 
@@ -183,7 +183,7 @@ OS 혹은 I/O 서브 시스템이 I/O를 처리하는 동안 프로세스는 멈
 
 파일 경합을 줄이기 위해 DBMS가 데이터를 가능한 여러 데이터파일로 분산해서 저장합니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/0b8dfa3d-b1f6-4356-89e1-8d777fbc2837/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2F0b8dfa3d-b1f6-4356-89e1-8d777fbc2837%2FUntitled.png?table=block&id=fe067fac-3001-4746-9d3e-40ebc8d56829&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 <aside>
 🤔 **DBA Data Block Address**
@@ -213,7 +213,7 @@ OS 혹은 I/O 서브 시스템이 I/O를 처리하는 동안 프로세스는 멈
 
 - 시퀀셜 액세스 : 논리적 또는 물리적으로 연결된 순서에 따라 차례로 블록을 읽습니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/f58835a0-05e2-45c0-84f3-9f808e0ec195/Untitled.png)
+![](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1feb7462-9c33-4bf1-b0bb-7973d34ffaf2%2Ff58835a0-05e2-45c0-84f3-9f808e0ec195%2FUntitled.png?table=block&id=725a5ee0-a1d6-4b2f-be7a-0fd1daa6c281&spaceId=1feb7462-9c33-4bf1-b0bb-7973d34ffaf2&width=2000&userId=180a704c-6552-4796-9dd2-ab125439ed98&cache=v2)
 
 테이블 블록간에는 어떻게 시퀀셜 방식으로 액세스할까요?
 
